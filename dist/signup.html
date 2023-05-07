@@ -1,0 +1,91 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="./output.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Metrophobic&display=swap" rel="stylesheet">
+
+<style>
+body{
+font-family: 'Metrophobic', sans-serif;
+}
+</style>
+</head>
+<body>
+<header>
+
+<nav class="fixed bg-red-200 w-screen p-2">
+<div class="flex justify-between">
+<img src="https://upload.wikimedia.org/wikipedia/en/c/c2/Logo_of_Vidya_Academy_of_Science_and_Technology_02.png" class="w-14 h-14 border rounded-full lg:w-24 lg:h-24 xl:w-24 xl:h-24" alt="vidya">
+<ul class="flex ">
+<li class="p-2 font-bold text-slate-900 lg:p-6 xl:p6  "><a href="index.html" class="xl:text-3xl lg:text-3xl hover:text-rose-500 hover:bg-white hover:rounded-md font-md">Home</a></li>
+<li class="p-2 font-bold text-slate-900 xl:p-6 lg:p-6 "><a href="signin.html"class="hover:text-rose-500 lg:text-3xl xl:text-3xl hover:bg-white hover:rounded-md ">Sign In</a></li>
+</ul>
+
+</div>
+</nav>
+
+</header>
+
+<!---form -->
+<div class="  flex justify-center items-center bg-slate-600 w-screen  h-screen">
+<div class="mt-6 shadow-2xl bg-slate-300 rounded-md w-72 h-3/4 pt-10 pb-20 lg:border-3 lg:border-red-200 xl-border-3 xl:border-red-200 lg:w-1/2 lg:h-2/5 xl:w-1/2 xl:h-2/5">
+
+<h1 class="text-2xl lg:mt-5 lg:mb-5 lg:text-4xl xl:mt-5 xl:mb-5 xl:text-4xl font-bold text-center mb-3 text-slate-700"><i class="fa-sharp fa-solid fa-user"></i> Signup</h1>
+<div class="">
+<form>
+<label for="Name" class="ml-6 lg:ml-8 xl:ml-8 mt-1 text-1xl lg:text-3xl lg:pt-2 xl:text-3xl xl:pt-2 block">Name:</label>
+<input type="text" id="name" class="text-base ml-6 lg:ml-8 xl:ml-8 p-1 lg:p-3 lg:w-3/4 xl:p-3 xl:w-3/4 border-2 border-blue-300 rounded-md " placeholder="Enter your name">
+
+</div>
+
+<div class="">
+<label for="email" class="lg:text-3xl lg:pt-2 xl:text-3xl xl:pt-2 ml-6 lg:ml-8 xl:ml-8 mt-2 text-1xl block">Email:</label>
+<input type="email" id="name" class="text-base p-1 ml-6 lg:ml-8 xl:ml-8 lg:p-3 lg:w-3/4 xl:p-3 xl:w-3/4 border-2 border-blue-300 rounded-md " placeholder="dummy122@gmail.com">
+
+</div>
+
+<div class="">
+<label for="passwd" class="lg:text-3xl lg:pt-2 xl:text-3xl xl:pt-2 mt-2 ml-6 lg:ml-8 xl:ml-8  text-1xl block">Password:</label>
+<input type="password" id="name" class="text-base ml-6 lg:ml-8 xl:ml-8 p-1 lg:p-3 lg:w-3/4    border-2 xl:p-3 xl:w-3/4 border-blue-300 rounded-md " placeholder="Enter password">
+
+</div>
+
+<div class="">
+<label for="department" class="  lg:text-3xl lg:pt-2 xl:text-3xl xl:pt-2 ml-6 lg:ml-8 xl:ml-8 mt-2  text-1xl block">Department :</label>
+<select name="select" class="text-base lg:ml-8 xl:ml-8 ml-6 p-1 lg:p-3 lg:w-3/4 xl:p-3 xl:w-3/4 border-2 border-blue-300 rounded-md " id="selct">
+<option value="Computer_Science">computer science</option>
+<option value="Mech">Mech</option>
+<option value="civil">Civil</option>
+<option value="eee">EEE</option>
+<option value="ece">ECE</option>
+</select>
+
+
+</div>
+<div class="flex items-start mb-6 p-2  ml-6 lg:ml-8 xl:ml-8 lg:p-4 xl:p-4">
+<div class="flex items-center h-5 ">
+<input id="remember" type="checkbox" value="" class="w-4 h-4 lg:w-5 lg:h-5 border border-gray-300 rounded bg-gray-50 focus:ring-3 focus:ring-blue-300 dark:bg-gray-700 dark:border-gray-600 dark:focus:ring-blue-600 dark:ring-offset-gray-800">
+</div>
+<label for="remember" class="ml-2 text-md  text-grey-700 lg:text-xl"> I agree </label>
+</div>
+<div class="flex justify-center items-start  ">
+<button class="border-2 mt-1 lg:mt-5 xl:mt-5 border-blue-600 bg-blue-400 text-white hover:bg-blue-600 hover:border-blue-400 w-1/2 h-9 text-center rounded-md  ">
+<input type="submit" value="Submit">
+</button>
+</div>
+
+</form>
+
+</div>
+
+</div>
+</div>
+
+
+</body>
+</html>

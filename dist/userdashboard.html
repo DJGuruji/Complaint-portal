@@ -1,162 +1,236 @@
-<!doctype html>
+<!DOCTYPE html>
 <html>
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link href="./output.css" rel="stylesheet">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Metrophobic&display=swap" rel="stylesheet">
-<style>
-  body {
-    font-family: 'Metrophobic', sans-serif;
-  }
-</style>
-</head>
-<body class="bg-slate-600">
-<header>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="./output.css" rel="stylesheet" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+      integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Metrophobic&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      body {
+        font-family: "Metrophobic", sans-serif;
+      }
+    </style>
+  </head>
+  <body class="bg-slate-600">
+    <header>
+      <nav class="sticky top-0 bg-red-200 w-screen">
+        <div class="flex justify-between">
+          <img
+            src="https://upload.wikimedia.org/wikipedia/en/c/c2/Logo_of_Vidya_Academy_of_Science_and_Technology_02.png"
+            class="w-14 h-14 border rounded-full lg:w-24 lg:h-24 xl:w-24 xl:h-24"
+            alt="vidya"
+          />
+          <ul class="flex">
+            <li class="p-2 text-scale-300 lg:p-6 lg:text-lg xl:p6 xl:text-lg">
+              <span class="">Hello DJGuruji</span>
+            </li>
+            <li class="p-2 font-bold lg:p-6 lg:text-lg xl:p6 xl:text-lg">
+              <a
+                href="index.html"
+                class="text-red-500 bg-white p-1 rounded-md text-rose-500 lg:text-lg xl:text-lg"
+                >Logout</a
+              >
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+    <!-- aside-->
 
+    <div>
+      <aside
+        class="fixed left-0 w-20 lg:w-48 xl:w-48 h-full"
+        aria-label="Sidenav"
+      >
+        <div
+          class="overflow-y-auto h-full bg-slate-900 border-r border-red-200 lg:border-red-400 xl:border-red-400 lg:border-3"
+        >
+          <ul class="space-y-0">
+            <a
+              href="complaints.html"
+              class="text-base font-normal text-gray-900 rounded-lg dark:text-white overflow-hidden"
+            >
+              <li
+                class="py-9 lg:py-11 border-b lg:border-b-2 border-slate-500 text-white text-center  "
+              >
+                Complaints
+              </li></a
+            >
 
-<nav class="sticky top-0 py-4 bg-red-200 w-screen">
-<div class="flex justify-between">
-<img src="https://upload.wikimedia.org/wikipedia/en/c/c2/Logo_of_Vidya_Academy_of_Science_and_Technology_02.png" class="w-14 h-14 border rounded-full lg:w-24 lg:h-24 xl:w-24 xl:h-24" alt="vidya">
-<ul class="flex">
-<li class="mt-4 mr-3 text-black xl:mt-9 lg:mt-9">
+            <a
+              href="profile.html"
+              class="text-base font-normal text-gray-900 rounded-lg dark:text-white"
+            >
+              <li
+                class="py-9 lg:py-11 border-b lg:border-b-2 border-slate-500 text-white text-center"
+              >
+                Profile
+              </li>
+            </a>
 
-<span class="text-md lg:text-xl xl:text-2xl">Guruji
-</span>
-</li>
-<li class="p-2 mt-2 text-black font-semibold lg:p-6 lg:text-lg xl:p6 xl:text-lg"><a href="index.html"class="hover:text-rose-500 lg:text-2xl xl:text-2xl hover:bg-white  hover:rounded-md">Logout</a>
-</li>
-</ul>
+            <a
+              href="admintools.html"
+              class="text-base font-normal text-gray-900 rounded-lg dark:text-white group"
+            >
+              <li
+                class="py-9 lg:py-11 border-b lg:border-b-2 border-slate-500 text-white text-center"
+              >
+                Admin tools
+              </li>
+            </a>
+            <a href="add.html">
+              <li
+                class="lg:py-9 py-11 border-b lg:border-b-2 xl:border-b-2 dark:border-slate-500 text-white text-center"
+              >
+                + Add
+              </li>
+            </a>
+          </ul>
+        </div>
+      </aside>
+    </div>
+    <!--search bar-->
 
-</div>
-</nav>
+    <div
+      class="search ml-20 lg:ml-52 xl:ml-52 lg:w-3/4 xl:w-3/4 h-full mt-8 lg:mt-8 xl:mt-8"
+    >
+      <form>
+        <label
+          for="default-search"
+          class="mb-2 text-sm font-medium text-gray-900 sr-only"
+          >Search</label
+        >
+        <div class="relative">
+          <div
+            class="absolute inset-y-0 left-0 flex items-center pl-3 pointer-events-none"
+          >
+            <i class="fa-solid fa-magnifying-glass"></i>
+          </div>
+          <input
+            type="search"
+            id="default-search"
+            class="mt-3 bg-slate-100 lg:mt-5 xl:mt-5 block w-full p-4 pl-10 text-sm text-gray-900 border border-gray-400 rounded-lg bg-gray-50 focus:ring-blue-500"
+            placeholder="Search Complaints"
+            required
+          />
+          <button
+            type="submit"
+            class="text-white absolute right-2.5 bottom-2.5 bg-blue-500 hover:bg-blue-200 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-2 mt-3 py-2"
+          >
+            Search
+          </button>
+        </div>
+      </form>
+    </div>
 
+    <!--scroll bar -->
+    <div
+      class="bg-slate-400 scrollbar mt-7 lg:mt-7 xl:mt-7 p-2 lg:p-3 xl:p-3 ml-20 mr-2 lg:ml-52 xl:ml-52 lg:w-3/4 xl:w-3/4 rounded-md border border-gray-400 flex lg:justify-around overflow-x-scroll"
+    >
+      <div
+        class="electrical border border-blue-300 p-1 mr-2 rounded-md text-white bg-blue-500 hover:bg-blue-700 hover:text-white lg:px-4 lg:py-2 xl:px-4 xl:py-2 lg:mr-6 xl:mr-6"
+      >
+        <a href=""> electrical</a>
+      </div>
+      <div
+        class="mechanical border border-blue-300 bg-blue-500 text-white p-1 mr-2 hover:bg-blue-700 rounded-md lg:px-4 lg:py-2 xl:px-4 xl:py-2 lg:mr-6 xl:mr-6"
+      >
+        <a href="">mechanical</a>
+      </div>
+      <div
+        class="civil border border-blue-300 p-1 mr-2 rounded-md hover:bg-blue-700 bg-blue-500 text-white lg:px-4 lg:py-2 xl:px-4 xl:py-2 lg:mr-6 xl:mr-6"
+      >
+        <a href=""> civil</a>
+      </div>
+      <div
+        class="cs border border-blue-300 p-1 mr-2 rounded-md hover:bg-blue-700 bg-blue-500 text-white lg:px-4 lg:py-2 xl:px-4 xl:py-2 lg:mr-6 xl:mr-6"
+      >
+        <a href=""> computer</a>
+      </div>
+      <div
+        class="electronics border border-blue-300 p-1 mr-2 rounded-md hover:bg-blue-700 bg-blue-500 text-white lg:px-4 lg:py-2 xl:px-4 xl:py-2 lg:mr-6 xl:mr-6"
+      >
+        <a href="">Electronics</a>
+      </div>
+      <div
+        class="electrical border border-blue-300 p-1 mr-2 rounded-md bg-blue-500 hover:bg-blue-700 text-white lg:px-4 lg:py-2 xl:px-4 xl:py-2 lg:mr-6 xl:mr-6"
+      >
+        <a href="">Other</a>
+      </div>
+    </div>
+    <!-- div including complaint abstrct and tprev etc btn -->
+    <div
+      class="lg:w-3/4 xl:w-3/4 bg-slate-400 wrapper mt-11 lg:mt-14 xl:mt-11 border-2 border-red-200 ml-20 lg:ml-52 xl:ml-52 py-2 px-1 lg:pb-3 lg:mr-10"
+    >
+      <div class="flex justify-center w-3/4 h-3/4">
+        <div
+          class="abstract bg-slate-300 abstraction lg:w-3/4 xl:w-3/4 lg:h-3/4 xl:h-3/4  rounded-l-md mt-3 lg:mt-5 xl:mt-5 text-md text-black border border-gray-400 bg-gray-50 focus:ring-blue-500 lg:text-center "
+        >
+         <span class="p-6">Complaint abstraction</span>
+         <br />
+          <div class="branchbtn flex justify-center">
+            <button
+              class="btnbranch border border-blue-300 mr-1 px-1 text-white bg-blue-700 mt-1 lg:mt-2 xl:mt-2 rounded-md"
+            >
+              Branch
+            </button>
+            <button
+              class="btntick border border-blue-300 mr-1 px-1 mt-1 lg:mt-2 xl:mt-2 text-white bg-blue-400 rounded-sm"
+            >
+              ✓
+            </button>
+            <button
+              class="btncross border border-blue-300 mr-1 px-1 mt-1 lg:mt-2 xl:mt-2 text-white bg-blue-400 rounded-sm"
+            >
+              x
+            </button>
+          </div>
+        </div>
 
-</header>
-<!-- aside-->
+      </div>
 
-<div>
-<aside class="fixed left-0 w-20 lg:w-48 xl:w-48 h-full" aria-label="Sidenav">
-<div class="overflow-y-auto  h-full bg-slate-900 border-r border-red-200 lg:border-red-400 xl:border-red-400 lg:border-3">
-<ul class="space-y-0">
+      <!--prev and other 4 btn-->
 
-<a href="complaints.html" class="text-base font-normal text-gray-900 rounded-lg dark:text-white  ">
-<li class="py-9 lg:py-11 border-b lg:border-b-2  border-slate-500 text-white text-center">
-Complaints
-
-</li></a>
-
-<a href="profile.html" class="  text-base font-normal text-gray-900 rounded-lg dark:text-white ">
-<li class="py-9 lg:py-11 border-b lg:border-b-2 border-slate-500 text-white text-center">
-Profile
-
-</li>
-</a>
-
-<a href="admintools.html" class="  text-base font-normal text-gray-900 rounded-lg dark:text-white   group">
-<li class="py-9 lg:py-11 border-b lg:border-b-2 border-slate-500 text-white text-center">
-Admin tools
-</li>
-</a>
-<a href="add.html">
-<li class="lg:py-9 py-11 border-b lg:border-b-2 xl:border-b-2 dark:border-slate-500 text-white text-center">
-+ Add
-</li>
-</a>
-</ul>
-
-</div>
-</div>
-</aside>
-</div>
-<!--search bar-->
-
-<div class="search ml-20 lg:ml-52 xl:ml-52 lg:w-3/4 xl:w-3/4 h-full mt-8 lg:mt-8 xl:mt-8 ">
-
-
-<form>
-<label for="default-search" class="mb-2 text-sm font-medium text-gray-900 sr-only ">Search</label>
-<div class="relative">
-<div class="absolute inset-y-0 left-0 flex items-center pl-3 pointer-events-none">
-<i class="fa-solid fa-magnifying-glass"></i>
-</div>
-<input type="search" id="default-search" class="mt-3  bg-slate-100 lg:mt-5 xl:mt-5 block w-full p-4 pl-10 text-sm text-gray-900 border border-gray-400 rounded-lg bg-gray-50 focus:ring-blue-500 " placeholder="Search Complaints" required>
-<button type="submit" class=" text-white absolute right-2.5 bottom-2.5 bg-blue-500 hover:bg-blue-200 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-2 mt-3 py-2 ">Search</button>
-</div>
-</form>
-
-
-
-</div>
-
-<!--scroll bar -->
-<div class="bg-slate-400 scrollbar mt-7 lg:mt-7 xl:mt-7 p-2 lg:p-3 xl:p-3 ml-20 mr-2 lg:ml-52 xl:ml-52 lg:w-3/4 xl:w-3/4 rounded-md border border-gray-400 flex lg:justify-around overflow-x-scroll ">
-
-<div class="electrical border border-blue-300 p-1 mr-2  rounded-md text-white bg-blue-500 hover:bg-blue-700 hover:text-white lg:px-4 lg:py-2 xl:px-4 xl:py-2 lg:mr-6 xl:mr-6">
-<a href="">
-electrical</a>
-</div>
-<div class="mechanical border border-blue-300 bg-blue-500 text-white p-1 mr-2 hover:bg-blue-700  rounded-md lg:px-4 lg:py-2 xl:px-4 xl:py-2 lg:mr-6 xl:mr-6">
-<a href="">mechanical</a>
-</div>
-<div class="civil border border-blue-300 p-1 mr-2 rounded-md  hover:bg-blue-700 bg-blue-500 text-white lg:px-4 lg:py-2 xl:px-4 xl:py-2 lg:mr-6 xl:mr-6 ">
-<a href="">
-civil</a>
-</div>
-<div class="cs border border-blue-300 p-1 mr-2 rounded-md hover:bg-blue-700 bg-blue-500 text-white lg:px-4 lg:py-2 xl:px-4 xl:py-2 lg:mr-6 xl:mr-6 ">
-<a href="">
-computer</a>
-</div>
-<div class="electronics border border-blue-300 p-1 mr-2 rounded-md  hover:bg-blue-700 bg-blue-500 text-white lg:px-4 lg:py-2 xl:px-4 xl:py-2 lg:mr-6 xl:mr-6">
-<a href="">Electronics</a>
-</div>
-<div class="electrical border border-blue-300 p-1 mr-2 rounded-md bg-blue-500 hover:bg-blue-700  text-white lg:px-4 lg:py-2 xl:px-4 xl:py-2 lg:mr-6 xl:mr-6">
-<a href="">Other</a>
-
-</div>
-
-</div>
-<!-- div including complaint abstrct and tprev etc btn -->
-<div class="bg-slate-400 wrapper mt-11 lg:mt-14 xl:mt-11 border-2 border-red-200 ml-20 lg:ml-52 xl:ml-52 py-2 px-1 lg:pb-3 lg:mr-10">
-<div class=" flex justify-center ml-16">
-<div class=" abstract bg-slate-300 abstraction lg:w-1/4 rounded-l-md mt-3 lg:mt-5 xl:mt-5 lg:pl-6  text-md text-black border border-gray-400 bg-gray-50 focus:ring-blue-500  lg:text-center pl-6 pr-3">
-Complaint Abstraction<br>
-<div class=" branchbtn flex justify-center  ">
-<button class="btnbranch border border-blue-300 mr-1 px-1 text-white bg-blue-700 mt-1 lg:mt-2 xl:mt-2 rounded-md">Branch</button>
-<button class="btntick border border-blue-300 mr-1 px-1 mt-1 lg:mt-2 xl:mt-2 text-white bg-blue-400 rounded-sm">✓</button>
-<button class="btncross border border-blue-300 mr-1 px-1 mt-1 lg:mt-2 xl:mt-2 text-white bg-blue-400 rounded-sm">x</button>
-
-</div>
-</div>
-
-<div class="button">
-<button class="text-lg text-white border  border-blue-300 rounded-r-md p-6 lg:p-7 xl:p-7 mt-3 mr-16 lg:mt-5 xl:mt-5 pr-3.5 lg:pb-5 hover:bg-blue-700 bg-blue-500">>
-</button>
-
-</div>
-
-</div>
-
-
-
-
-<!--prev and other 4 btn-->
-
-
-<div class="fourbtn flex justify-center mt-12 ">
-<button class="border border-black prevbtn btntick border border-blue-300 mr-1 px-1 mt-1 lg:mt-2 xl:mt-2 text-white bg-blue-400 rounded-md ">Prev</button>
-<button class=" border border-black onebtn btntick border border-blue-300 mr-1 px-1 mt-1 xl:mt-2 lg:mt-2 text-white bg-blue-400 rounded-md">1
-</button>
-<button class=" border border-black twobtn btntick border border-blue-300 mr-1 px-1 mt-1 lg:mt-2 xl:mt-2 text-white bg-blue-400 rounded-md">2</button>
-<button class="border border-black threebtn btntick border border-blue-300 mr-1 px-1 mt-1 lg:mt-2 xl:mt-2 text-white bg-blue-400 rounded-md">3</button>
-<button class="border border-black nextbtn btntick border border-blue-300 mr-1 px-1 mt-1 lg:mt-2 xl:mt-2 text-white bg-blue-400 rounded-md">Next</button>
-</div>
-</div>
-<script src="./dashboard.js">
-
-</script>
-</body>
+      <div class="fourbtn flex justify-center mt-12">
+        <button
+          class="border border-black prevbtn btntick border border-blue-300 mr-1 px-1 mt-1 lg:mt-2 xl:mt-2 text-white bg-blue-400 rounded-md"
+        >
+          Prev
+        </button>
+        <button
+          class="border border-black onebtn btntick border border-blue-300 mr-1 px-1 mt-1 xl:mt-2 lg:mt-2 text-white bg-blue-400 rounded-md"
+        >
+          1
+        </button>
+        <button
+          class="border border-black twobtn btntick border border-blue-300 mr-1 px-1 mt-1 lg:mt-2 xl:mt-2 text-white bg-blue-400 rounded-md"
+        >
+          2
+        </button>
+        <button
+          class="border border-black threebtn btntick border border-blue-300 mr-1 px-1 mt-1 lg:mt-2 xl:mt-2 text-white bg-blue-400 rounded-md"
+        >
+          3
+        </button>
+        <button
+          class="border border-black nextbtn btntick border border-blue-300 mr-1 px-1 mt-1 lg:mt-2 xl:mt-2 text-white bg-blue-400 rounded-md"
+        >
+          Next
+        </button>
+      </div>
+    </div>
+    <script src="./dashboard.js"></script>
+  </body>
 </html>

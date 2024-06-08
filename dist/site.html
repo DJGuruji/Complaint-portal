@@ -16,28 +16,30 @@ font-family: 'Metrophobic', sans-serif;
 </style>
 </head>
 <body class="bg-slate-600">
-<header>
+  <header>
+    <nav class="sticky top-0 bg-red-200 w-screen">
+      <div class="flex justify-between">
+        <img
+          src="https://upload.wikimedia.org/wikipedia/en/c/c2/Logo_of_Vidya_Academy_of_Science_and_Technology_02.png"
+          class="w-14 h-14 border rounded-full lg:w-24 lg:h-24 xl:w-24 xl:h-24"
+          alt="vidya"
+        />
+        <ul class="flex">
+          <li class="p-2 text-scale-300 lg:p-6 lg:text-lg xl:p6 xl:text-lg">
+            <span class="">Hello DJGuruji</span>
+          </li>
 
-
-<nav class="bg-red-200 w-screen p-2">
-<div class="flex justify-between">
-<img src="https://upload.wikimedia.org/wikipedia/en/c/c2/Logo_of_Vidya_Academy_of_Science_and_Technology_02.png" class="w-14 h-14 border rounded-full lg:w-24 lg:h-24 xl:w-24 xl:h-24" alt="vidya">
-<ul class="flex">
-
-<li class="mt-4 mr-3 text-black xl:mt-9 lg:mt-9">
-
-<span class="text-md lg:text-xl xl:text-2xl">Guruji
-</span>
-</li>
-<li class="font-semibold p-2 mt-2 text-black lg:p-6 lg:text-lg xl:p6 xl:text-lg"><a href="index.html"class="hover:text-rose-500 lg:text-2xl xl:text-2xl hover:bg-white  hover:rounded-md">Logout</a>
-</li>
-</ul>
-
-</div>
-</nav>
-
-
-</header>
+          <li class="p-2 font-bold lg:p-6 lg:text-lg xl:p6 xl:text-lg">
+            <a
+              href="index.html"
+              class="text-red-500 bg-white p-1 rounded-md text-rose-500 lg:text-lg xl:text-lg"
+              >Logout</a
+            >
+          </li>
+        </ul>
+      </div>
+    </nav>
+  </header>
 <!-- aside-->
 
 <div>
@@ -66,6 +68,13 @@ Admin
 </li>
 </a>
 
+<a href="admintools.html" class="  text-base font-normal text-gray-900 rounded-lg dark:text-white   group">
+  <li class="py-12 lg:py-12 border-b lg:border-b-2 border-slate-500 text-white text-center">
+  Admin Tools
+  </li>
+  </a>
+  
+
 </ul>
 
 </div>
@@ -79,29 +88,29 @@ Admin
 <div class="  flex justify-center items-center bg-slate-600 ml-20 lg:ml-48 xl:ml-48 h-full">
 <div class="mt-6 lg:mt-8 bg-slate-400 lg:pb-3 xl:pb-3 rounded-lg w-72 h-3/4 pt-10 pb-20 lg:border-3 lg:border-red-200 xl-border-3 xl:border-red-200 lg:w-1/2 lg:h-1/5 xl:w-1/2 xl:h-1/5">
 
-<h1 class="text-2xl lg:mt-5 lg:mb-5 lg:text-4xl xl:mt-5 xl:mb-5 xl:text-4xl font-bold text-center mb-3 text-slate-700"><i class="fa-sharp fa-solid fa-user"></i> ADMIN</h1>
+<h1 class="text-xl lg:mt-5 lg:mb-5 lg:text-xl xl:mt-5 xl:mb-5 xl:text-xl font-bold text-center mb-3 text-slate-700"><i class="fa-sharp fa-solid fa-user"></i> ADMIN</h1>
 <div class="">
 <form>
-<label for="Name" class="ml-6 lg:ml-10 xl:ml-10 mt-3 mb-1 lg:mt-2 lg:mb:0 text-1xl lg:text-3xl lg:pt-2 xl:text-3xl xl:pt-2 block">Name:</label>
-<input type="text" id="name" class="text-base ml-6 pl-1 lg:ml-10 xl:ml-10 py-2 lg:p-3 lg:w-3/4 xl:p-3 xl:w-3/4 border-2 border-blue-300 rounded-md " placeholder="Name of website">
+<label for="Name" class="ml-6 lg:ml-10 xl:ml-10 mt-3 mb-1 lg:mt-2 lg:mb:0 text-xl lg:text-xl lg:pt-2 xl:text-xl xl:pt-2 block">Name:</label>
+<input type="text" id="name" class="text-base ml-6 pl-1 lg:ml-10 xl:ml-10 py-2 lg:p-1 lg:w-3/4 xl:p-1 xl:w-3/4 border-2 border-blue-300 rounded-md " placeholder="Name of website">
 
 </div>
 
-
-
-<div class="flex items-start mb-6 p-2  ml-6 lg:ml-10 xl:ml-10 lg:p-4 xl:p-4">
-<div class="flex items-center h-5">
 <div class="flex justify-center items-center mt-5">
-<button class="save border-2 lg:mt-1 xl:mt-1 lg:mb-2 xl:mb-2 border-blue-600 bg-blue-400 text-white hover:bg-blue-600 hover:border-blue-400 px-4 ml-14 lg:ml-28 xl:ml-28 h-9 mt-5  text-center rounded-md  ">
-Save
-</button>
+  <input type="submit" value="Save"
+    class="border-2 border-blue-600 bg-blue-400 text-white hover:bg-blue-600 hover:border-blue-400 w-1/2 h-8 text-center rounded-md lg:mt-5 xl:mt-5"
+    href="signin.html"
+    >
+  
 </div>
+
+
 
 </form>
 </div>
 
 </div>
-</div>
+
 
 </body>
 </html>

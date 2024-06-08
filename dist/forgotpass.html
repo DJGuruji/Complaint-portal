@@ -20,25 +20,45 @@
 <header>
 
 
-<nav class="fixed bg-red-200 w-screen p-4">
-<div class="flex justify-between">
-<img src="https://upload.wikimedia.org/wikipedia/en/c/c2/Logo_of_Vidya_Academy_of_Science_and_Technology_02.png" class="w-14 h-14 border rounded-full lg:w-24 lg:h-24 xl:w-24 xl:h-24" alt="vidya">
-<ul class="flex">
-<li class="p-2 font-semibold text-black  lg:p-6 lg:text-lg xl:p6 xl:text-lg "><a href="index.html" class="xl:text-3xl lg:text-3xl hover:text-rose-500 hover:bg-white hover:rounded-md">Home</a></li>
-<li class="p-2 font-semibold text-black lg:p-6 lg:text-lg xl:p6 xl:text-lg"><a href="signin.html"class="hover:text-rose-500 lg:text-3xl xl:text-3xl hover:bg-white hover:rounded-md">Sign In</a></li>
-</ul>
+  <nav class="sticky top-0 bg-red-200 w-screen">
+    <div class="flex justify-between">
+      <img
+        src="https://upload.wikimedia.org/wikipedia/en/c/c2/Logo_of_Vidya_Academy_of_Science_and_Technology_02.png"
+        class="w-14 h-14 border rounded-full lg:w-24 lg:h-24 xl:w-24 xl:h-24"
+        alt="vidya"
+      />
+      <ul class="flex">
+        <li
+          class="p-2 text-black font-bold lg:p-6 lg:text-lg xl:p6 xl:text-lg"
+        >
+          <a
+            href="index.html"
+            class="xl:text-lg lg:text-lg hover:text-rose-500"
+            >Home</a
+          >
+        </li>
+        <li
+          class="p-2 font-bold text-black lg:p-6 lg:text-lg xl:p6 xl:text-lg"
+        >
+          <a
+            href="signin.html"
+            class="hover:text-rose-500 lg:text-lg xl:text-lg"
+            >Sign in</a
+          >
+        </li>
+      </ul>
+    </div>
+  </nav>
 
-</div>
-</nav>
 
 </header>
 <div class=" flex justify-center items-center bg-slate-600 w-screen h-screen">
-<div class="mt-6 bg-slate-300 shadow-2xl rounded-md w-72 h-2/4 pt-10 pb-20 lg:border-3 lg:border-red-200 xl-border-3 xl:border-red-200 lg:w-1/2 lg:h-1/4 xl:w-1/2 xl:h-1/4 ">
+<div class="mt-6 bg-slate-300 shadow-2xl rounded-md w-72 h-2/4 pt-10 pb-20 lg:border-3 lg:border-red-200 xl-border-3 xl:border-red-200 lg:w-1/2 xl:w-1/2 ">
 
-<h1 class="text-2xl font-bold text-center mb-3 text-slate-700  lg:mt-5 lg:mb-5 lg:text-4xl xl:mt-5 xl:mb-5 xl:text-4xl ">  <i class="fa-solid fa-lock"></i> Forgot password</h1>
+<h1 class="text-2xl font-bold text-center mb-3 text-slate-700  lg:mt-5 lg:mb-5 lg:text-2xl xl:mt-5 xl:mb-5 xl:text-2xl ">  <i class="fa-solid fa-lock"></i> Forgot password</h1>
 <form>
 <div>
-<label for="email" class="ml-6 mt-4  lg:text-3xl lg:pt-2 xl:text-3xl xl:pt-2 text-1xl block">Enter your email:</label>
+<label for="email" class="ml-6 mt-5 text-xl block">Enter your email:</label>
 <input type="email" id="name" class="mt-2 text-base p-1 ml-6  border-2 border-blue-300 rounded-md lg:p-3 lg:w-3/4 xl:p-3 xl:w-3/4 " placeholder="dummy122@gmail.com">
 
 </div>
